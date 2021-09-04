@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct RockTheCodingInterviewApp: App {
+    
+    // MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
+    
 }
