@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9A2262A426E37E35008CB57A /* RockTheCodingInterviewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262A326E37E35008CB57A /* RockTheCodingInterviewApp.swift */; };
-		9A2262A626E37E35008CB57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262A526E37E35008CB57A /* ContentView.swift */; };
 		9A2262A826E37E3D008CB57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2262A726E37E3D008CB57A /* Assets.xcassets */; };
 		9A2262AB26E37E3D008CB57A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2262AA26E37E3D008CB57A /* Preview Assets.xcassets */; };
 		9A2262B526E37E3D008CB57A /* RockTheCodingInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262B426E37E3D008CB57A /* RockTheCodingInterviewTests.swift */; };
 		9A2262BF26E37E3D008CB57A /* RockTheCodingInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262BE26E37E3D008CB57A /* RockTheCodingInterviewUITests.swift */; };
+		9A2262CE26E40225008CB57A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262CD26E40225008CB57A /* SplashView.swift */; };
+		9A2262D326E4068F008CB57A /* SplashImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D226E4068F008CB57A /* SplashImageView.swift */; };
+		9A2262D626E4070A008CB57A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D526E4070A008CB57A /* LoginView.swift */; };
+		9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D726E40784008CB57A /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +38,16 @@
 /* Begin PBXFileReference section */
 		9A2262A026E37E35008CB57A /* RockTheCodingInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockTheCodingInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2262A326E37E35008CB57A /* RockTheCodingInterviewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTheCodingInterviewApp.swift; sourceTree = "<group>"; };
-		9A2262A526E37E35008CB57A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A2262A726E37E3D008CB57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A2262AA26E37E3D008CB57A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A2262B026E37E3D008CB57A /* RockTheCodingInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockTheCodingInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2262B426E37E3D008CB57A /* RockTheCodingInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTheCodingInterviewTests.swift; sourceTree = "<group>"; };
 		9A2262BA26E37E3D008CB57A /* RockTheCodingInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockTheCodingInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2262BE26E37E3D008CB57A /* RockTheCodingInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTheCodingInterviewUITests.swift; sourceTree = "<group>"; };
+		9A2262CD26E40225008CB57A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		9A2262D226E4068F008CB57A /* SplashImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashImageView.swift; sourceTree = "<group>"; };
+		9A2262D526E4070A008CB57A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9A2262D726E40784008CB57A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +98,9 @@
 		9A2262A226E37E35008CB57A /* RockTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				9A2262CF26E40653008CB57A /* CustomViews */,
+				9A2262CB26E401FA008CB57A /* Scenes */,
 				9A2262A326E37E35008CB57A /* RockTheCodingInterviewApp.swift */,
-				9A2262A526E37E35008CB57A /* ContentView.swift */,
 				9A2262A726E37E3D008CB57A /* Assets.xcassets */,
 				9A2262A926E37E3D008CB57A /* Preview Content */,
 			);
@@ -122,6 +129,40 @@
 				9A2262BE26E37E3D008CB57A /* RockTheCodingInterviewUITests.swift */,
 			);
 			path = RockTheCodingInterviewUITests;
+			sourceTree = "<group>";
+		};
+		9A2262CB26E401FA008CB57A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9A2262D426E406EF008CB57A /* LoginScene */,
+				9A2262CC26E40201008CB57A /* SplashScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9A2262CC26E40201008CB57A /* SplashScene */ = {
+			isa = PBXGroup;
+			children = (
+				9A2262CD26E40225008CB57A /* SplashView.swift */,
+			);
+			path = SplashScene;
+			sourceTree = "<group>";
+		};
+		9A2262CF26E40653008CB57A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A2262D226E4068F008CB57A /* SplashImageView.swift */,
+				9A2262D726E40784008CB57A /* RoundedButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9A2262D426E406EF008CB57A /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				9A2262D526E4070A008CB57A /* LoginView.swift */,
+			);
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2262A626E37E35008CB57A /* ContentView.swift in Sources */,
 				9A2262A426E37E35008CB57A /* RockTheCodingInterviewApp.swift in Sources */,
+				9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */,
+				9A2262D326E4068F008CB57A /* SplashImageView.swift in Sources */,
+				9A2262D626E4070A008CB57A /* LoginView.swift in Sources */,
+				9A2262CE26E40225008CB57A /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
