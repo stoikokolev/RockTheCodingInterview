@@ -16,6 +16,8 @@
 		9A2262D326E4068F008CB57A /* SplashImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D226E4068F008CB57A /* SplashImageView.swift */; };
 		9A2262D626E4070A008CB57A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D526E4070A008CB57A /* LoginView.swift */; };
 		9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D726E40784008CB57A /* RoundedButton.swift */; };
+		9AF6DE8F26E4A19F00A7F5A2 /* QuiestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE8E26E4A19F00A7F5A2 /* QuiestionView.swift */; };
+		9AF6DE9226E4AF7C00A7F5A2 /* Quiestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		9A2262D226E4068F008CB57A /* SplashImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashImageView.swift; sourceTree = "<group>"; };
 		9A2262D526E4070A008CB57A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9A2262D726E40784008CB57A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		9AF6DE8E26E4A19F00A7F5A2 /* QuiestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiestionView.swift; sourceTree = "<group>"; };
+		9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		9A2262A226E37E35008CB57A /* RockTheCodingInterview */ = {
 			isa = PBXGroup;
 			children = (
+				9AF6DE9026E4AF7000A7F5A2 /* Models */,
 				9A2262CF26E40653008CB57A /* CustomViews */,
 				9A2262CB26E401FA008CB57A /* Scenes */,
 				9A2262A326E37E35008CB57A /* RockTheCodingInterviewApp.swift */,
@@ -134,6 +139,7 @@
 		9A2262CB26E401FA008CB57A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9AF6DE8D26E4A17E00A7F5A2 /* QuiestionScene */,
 				9A2262D426E406EF008CB57A /* LoginScene */,
 				9A2262CC26E40201008CB57A /* SplashScene */,
 			);
@@ -163,6 +169,22 @@
 				9A2262D526E4070A008CB57A /* LoginView.swift */,
 			);
 			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		9AF6DE8D26E4A17E00A7F5A2 /* QuiestionScene */ = {
+			isa = PBXGroup;
+			children = (
+				9AF6DE8E26E4A19F00A7F5A2 /* QuiestionView.swift */,
+			);
+			path = QuiestionScene;
+			sourceTree = "<group>";
+		};
+		9AF6DE9026E4AF7000A7F5A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +321,8 @@
 				9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */,
 				9A2262D326E4068F008CB57A /* SplashImageView.swift in Sources */,
 				9A2262D626E4070A008CB57A /* LoginView.swift in Sources */,
+				9AF6DE9226E4AF7C00A7F5A2 /* Quiestion.swift in Sources */,
+				9AF6DE8F26E4A19F00A7F5A2 /* QuiestionView.swift in Sources */,
 				9A2262CE26E40225008CB57A /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,10 +12,14 @@ struct RoundedButton: View {
     // MARK: - Properties
     let text: String
     let action: () -> Void
+    let color: Color
     
     // MARK: - Initializer
-    init(_ text: String, action: @escaping () -> Void = {}) {
+    init(_ text: String,
+         color: Color = .blue,
+         action: @escaping () -> Void = {}) {
         self.text = text
+        self.color = color
         self.action = action
     }
     
@@ -25,7 +29,7 @@ struct RoundedButton: View {
             Text(text)
                 .frame(maxWidth: .infinity, maxHeight: 60)
                 .foregroundColor(.white)
-                .background(Color.blue)
+                .background(color)
                 .clipShape(Capsule())
         }
     }
