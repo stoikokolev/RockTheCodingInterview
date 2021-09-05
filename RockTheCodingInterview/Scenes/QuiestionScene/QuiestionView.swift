@@ -16,10 +16,7 @@ struct QuiestionView: View {
     // MARK: - Body
     var body: some View {
         VStack {
-            quiestionContainer
-            Divider()
-                .frame(height: 2)
-                .background(Color.white)
+            QuiestionContainer(quiestion: quiestion)
             answerContainer
             RoundedButton("Show answer") { isRevealed.toggle() }
             .frame(width: 200, height: 100, alignment: .center)
@@ -30,19 +27,6 @@ struct QuiestionView: View {
     }
     
     // MARK: - Helpers
-    private var quiestionContainer: some View {
-            VStack{
-                Text("Quiestion \(quiestion.id):")
-                    .font(.system(size: 20))
-                    .frame(maxHeight: 30)
-                    .padding(.bottom, 10)
-                Text(quiestion.text)
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 24, weight: .bold))
-            }
-            .foregroundColor(.white)
-    }
-    
     private var answerContainer: some View {
         ZStack {
             Text(quiestion.answer)

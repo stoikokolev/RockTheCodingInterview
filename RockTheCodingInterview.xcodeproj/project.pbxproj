@@ -18,6 +18,11 @@
 		9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2262D726E40784008CB57A /* RoundedButton.swift */; };
 		9AF6DE8F26E4A19F00A7F5A2 /* QuiestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE8E26E4A19F00A7F5A2 /* QuiestionView.swift */; };
 		9AF6DE9226E4AF7C00A7F5A2 /* Quiestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */; };
+		9AF6DE9726E4CE2A00A7F5A2 /* RearrangeLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9626E4CE2A00A7F5A2 /* RearrangeLinesView.swift */; };
+		9AF6DE9926E4CE6000A7F5A2 /* CodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9826E4CE6000A7F5A2 /* CodeBlock.swift */; };
+		9AF6DE9B26E4CEB500A7F5A2 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9A26E4CEB500A7F5A2 /* Line.swift */; };
+		9AF6DE9D26E4D9E800A7F5A2 /* QuiestionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9C26E4D9E800A7F5A2 /* QuiestionContainer.swift */; };
+		9AF6DE9F26E4E15700A7F5A2 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF6DE9E26E4E15700A7F5A2 /* DataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		9A2262D726E40784008CB57A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		9AF6DE8E26E4A19F00A7F5A2 /* QuiestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiestionView.swift; sourceTree = "<group>"; };
 		9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiestion.swift; sourceTree = "<group>"; };
+		9AF6DE9626E4CE2A00A7F5A2 /* RearrangeLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearrangeLinesView.swift; sourceTree = "<group>"; };
+		9AF6DE9826E4CE6000A7F5A2 /* CodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBlock.swift; sourceTree = "<group>"; };
+		9AF6DE9A26E4CEB500A7F5A2 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		9AF6DE9C26E4D9E800A7F5A2 /* QuiestionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiestionContainer.swift; sourceTree = "<group>"; };
+		9AF6DE9E26E4E15700A7F5A2 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +149,7 @@
 		9A2262CB26E401FA008CB57A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9AF6DE9526E4CE1200A7F5A2 /* RearrangeLinesScene */,
 				9AF6DE8D26E4A17E00A7F5A2 /* QuiestionScene */,
 				9A2262D426E406EF008CB57A /* LoginScene */,
 				9A2262CC26E40201008CB57A /* SplashScene */,
@@ -159,6 +170,7 @@
 			children = (
 				9A2262D226E4068F008CB57A /* SplashImageView.swift */,
 				9A2262D726E40784008CB57A /* RoundedButton.swift */,
+				9AF6DE9C26E4D9E800A7F5A2 /* QuiestionContainer.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -183,8 +195,19 @@
 			isa = PBXGroup;
 			children = (
 				9AF6DE9126E4AF7C00A7F5A2 /* Quiestion.swift */,
+				9AF6DE9826E4CE6000A7F5A2 /* CodeBlock.swift */,
+				9AF6DE9A26E4CEB500A7F5A2 /* Line.swift */,
+				9AF6DE9E26E4E15700A7F5A2 /* DataProvider.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9AF6DE9526E4CE1200A7F5A2 /* RearrangeLinesScene */ = {
+			isa = PBXGroup;
+			children = (
+				9AF6DE9626E4CE2A00A7F5A2 /* RearrangeLinesView.swift */,
+			);
+			path = RearrangeLinesScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,13 +340,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF6DE9726E4CE2A00A7F5A2 /* RearrangeLinesView.swift in Sources */,
 				9A2262A426E37E35008CB57A /* RockTheCodingInterviewApp.swift in Sources */,
 				9A2262D826E40784008CB57A /* RoundedButton.swift in Sources */,
 				9A2262D326E4068F008CB57A /* SplashImageView.swift in Sources */,
 				9A2262D626E4070A008CB57A /* LoginView.swift in Sources */,
 				9AF6DE9226E4AF7C00A7F5A2 /* Quiestion.swift in Sources */,
+				9AF6DE9F26E4E15700A7F5A2 /* DataProvider.swift in Sources */,
+				9AF6DE9D26E4D9E800A7F5A2 /* QuiestionContainer.swift in Sources */,
+				9AF6DE9926E4CE6000A7F5A2 /* CodeBlock.swift in Sources */,
 				9AF6DE8F26E4A19F00A7F5A2 /* QuiestionView.swift in Sources */,
 				9A2262CE26E40225008CB57A /* SplashView.swift in Sources */,
+				9AF6DE9B26E4CEB500A7F5A2 /* Line.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +549,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
